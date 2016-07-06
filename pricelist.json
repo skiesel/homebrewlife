@@ -4,8 +4,8 @@
 		"Packages" : [
 			{
 				"Unit" : "lb",
-				"Amount" : 10,
-				"Price" : 11.29
+				"Amount" : 1,
+				"Price" :  1.39
 			},
 			{
 				"Unit" : "lb",
@@ -14,8 +14,8 @@
 			},
 			{
 				"Unit" : "lb",
-				"Amount" : 1,
-				"Price" :  1.39
+				"Amount" : 10,
+				"Price" : 11.29
 			}
 		]
 	},
@@ -24,13 +24,48 @@
 		"Packages" : [
 			{
 				"Unit" : "lb",
+				"Amount" : 1,
+				"Price" :  1.69
+			},
+			{
+				"Unit" : "lb",
 				"Amount" : 5,
 				"Price" : 5.64
+			}
+		]
+	},
+	{
+		"Name" : "Barley, Flaked",
+		"Packages" : [
+			{
+				"Unit" : "lb",
+				"Amount" : 1,
+				"Price" : 1.69
+			},
+			{
+				"Unit" : "lb",
+				"Amount" : 5,
+				"Price" :  6.25
+			}
+		]
+	},
+	{
+		"Name" : "Black Barley (Stout)",
+		"Packages" : [
+			{
+				"Unit" : "lb",
+				"Amount" : 0.25,
+				"Price" : 1.00
 			},
 			{
 				"Unit" : "lb",
 				"Amount" : 1,
-				"Price" :  1.69
+				"Price" : 2.09
+			},
+			{
+				"Unit" : "lb",
+				"Amount" : 5,
+				"Price" :  8.50
 			}
 		]
 	},
@@ -114,6 +149,16 @@
 		]
 	},
 	{
+		"Name" : "Irish Ale",
+		"Packages" : [
+			{
+				"Unit" : "pkg",
+				"Amount" : 1,
+				"Price" : 6.99
+			}
+		]
+	},
+	{
 		"Name" : "Brown Sugar, Light",
 			"Packages" : [
 			{
@@ -142,5 +187,15 @@
 				"Price" : 0
 			}
 		]
+	},
+	{
+		"Name" : "Gypsum (Calcium Sulfate)",
+			"Packages" : [
+			{
+				"Unit" : "oz",
+				"Amount" : 1,
+				"Price" : 0
+			}
+		]		
 	}
 ]

@@ -13,8 +13,10 @@ func optimizePurchaseForRecipes(totals map[string]float64, priceList *PriceList)
 
 	variableCount := 0
 	ingredientList := []string{}
+	mappedIngredientList := []string{}
 	for ingredient, _ := range totals {
 		ingredientList = append(ingredientList, ingredient)
+		mappedIngredientList = append(mappedIngredientList, searchForIngredient(ingredient))
 		variableCount += len(priceMap[ingredient].Packages)
 	}
 
@@ -24,16 +26,17 @@ func optimizePurchaseForRecipes(totals map[string]float64, priceList *PriceList)
 
 	currentVariable := 0
 	variablePrices := []float64{}
-	for _, ingredient := range ingredientList {
+	for i, ingredient := range ingredientList {
+		mappedIngredient := mappedIngredientList[i]
 		total := totals[ingredient]
-		if _, ok := priceMap[ingredient]; !ok {
+		if _, ok := priceMap[mappedIngredient]; !ok {
 			fmt.Printf("Could not find price for: %v\n", ingredient)
 			missingPrice = true
 			continue
 		}
 
 		entries := []golp.Entry{}
-		for _, pack := range priceMap[ingredient].Packages {
+		for _, pack := range priceMap[mappedIngredient].Packages {
 			entries = append(entries, golp.Entry{currentVariable, pack.Amount})
 			variablePrices = append(variablePrices, pack.Price)
 			lp.SetInt(currentVariable, true)
@@ -52,11 +55,12 @@ func optimizePurchaseForRecipes(totals map[string]float64, priceList *PriceList)
 
 	solvedVariables := lp.Variables()
 	currentVariable = 0
-	for _, ingredient := range ingredientList {
-		for _, pack := range priceMap[ingredient].Packages {
+	for i := range ingredientList {
+		mappedIngredient := mappedIngredientList[i]
+		for _, pack := range priceMap[mappedIngredient].Packages {
 			if solvedVariables[currentVariable] > 0 {
 				price := float64(solvedVariables[currentVariable]) * pack.Price
-				fmt.Printf("%v%v of %v x %v (%.2f)\n", pack.Amount, pack.Unit, ingredient, solvedVariables[currentVariable], price)
+				fmt.Printf("%v%v of %v x %v (%.2f)\n", pack.Amount, pack.Unit, mappedIngredient, solvedVariables[currentVariable], price)
 			}
 			currentVariable++
 		}

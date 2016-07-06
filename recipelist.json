@@ -2,5 +2,9 @@
 	{
 		"Name" : "Burton Ale",
 		"Quantity" : 1
+	},
+	{
+		"Name" : "Dry Stout",
+		"Quantity" : 1
 	}
 ]
