@@ -1,0 +1,146 @@
+[
+	{
+		"Name" : "Pale Malt (2 Row) UK",
+		"Packages" : [
+			{
+				"Unit" : "lb",
+				"Amount" : 10,
+				"Price" : 11.29
+			},
+			{
+				"Unit" : "lb",
+				"Amount" : 5,
+				"Price" : 5.89
+			},
+			{
+				"Unit" : "lb",
+				"Amount" : 1,
+				"Price" :  1.39
+			}
+		]
+	},
+	{
+		"Name" : "Caramel/Crystal Malt - 20L",
+		"Packages" : [
+			{
+				"Unit" : "lb",
+				"Amount" : 5,
+				"Price" : 5.64
+			},
+			{
+				"Unit" : "lb",
+				"Amount" : 1,
+				"Price" :  1.69
+			}
+		]
+	},
+	{
+		"Name" : "Fuggles",
+		"Packages" : [
+			{
+				"Unit" : "oz",
+				"Amount" : 1,
+				"Price" : 2.29
+			},
+			{
+				"Unit" : "oz",
+				"Amount" : 2,
+				"Price" :  3.59
+
+			},
+			{
+				"Unit" : "oz",
+				"Amount" : 8,
+				"Price" :  11.99
+
+			}
+		]
+	},
+	{
+		"Name" : "Goldings, East Kent",
+		"Packages" : [
+			{
+				"Unit" : "oz",
+				"Amount" : 1,
+				"Price" : 2.09
+			},
+			{
+				"Unit" : "oz",
+				"Amount" : 2,
+				"Price" :  3.49
+
+			},
+			{
+				"Unit" : "oz",
+				"Amount" : 8,
+				"Price" :  11.29
+
+			}
+		]
+	},
+	{
+		"Name" : "Northern Brewer",
+		"Packages" : [
+			{
+				"Unit" : "oz",
+				"Amount" : 0.5,
+				"Price" : 0.99
+			},
+			{
+				"Unit" : "oz",
+				"Amount" : 1,
+				"Price" : 1.49
+			},
+			{
+				"Unit" : "oz",
+				"Amount" : 2,
+				"Price" :  2.59
+			},
+			{
+				"Unit" : "oz",
+				"Amount" : 8,
+				"Price" :  8.99
+			}
+		]
+	},
+	{
+		"Name" : "Burton Ale",
+		"Packages" : [
+			{
+				"Unit" : "pkg",
+				"Amount" : 1,
+				"Price" : 6.99
+			}
+		]
+	},
+	{
+		"Name" : "Brown Sugar, Light",
+			"Packages" : [
+			{
+				"Unit" : "pkg",
+				"Amount" : 1,
+				"Price" : 0
+			}
+		]
+	},
+	{
+		"Name" : "Polyclar",
+			"Packages" : [
+			{
+				"Unit" : "pkg",
+				"Amount" : 1,
+				"Price" : 0
+			}
+		]
+	},
+	{
+		"Name" : "Irish Moss",
+			"Packages" : [
+			{
+				"Unit" : "pkg",
+				"Amount" : 1,
+				"Price" : 0
+			}
+		]
+	}
+]
